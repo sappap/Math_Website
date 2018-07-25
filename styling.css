@@ -1,0 +1,273 @@
+/*add style conainer*/
+/*all style inside container 
+border height & width etc.*/
+
+#container{
+    
+/*    id name "container"*/
+    width: 1000px;
+    border: 1px solid grey;
+/*    border color grey*/
+    height: 100px;
+    margin: 0 auto; 
+/*     container of a margin top,bottom set 0 ,move left & right by auto*/
+    
+}
+
+#header{
+    height:100px;
+    padding: 10px 0px;
+    
+/*    padding top and bottom*/
+}
+#brand{
+    float: left;
+/*      heading "maths fun away goes to left"*/
+    
+}
+
+h1 a{
+    
+        
+/*    creating styling for heading h1*/
+    
+    font-size: 50px;
+    font-weight:100;
+    color: green;
+    text-decoration: none;
+    
+/*    text text-decoration: to remove underline*/
+    
+}
+
+#searchbox{
+    
+    float: right;
+/*     search box move right of the header using float*/
+    background : linear-gradient(#EAF289,#B7E953);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    
+/*    padding of a search box,top,right,bottom,left makes adjust search box with all sides*/
+    
+    margin-top: 18px;
+    
+/*    from margin top 22px below a search box;*/
+    
+
+    
+    
+}
+
+.text{
+    
+    float: left; /*    text box moves to a left*/
+    width: 170px;
+    padding: 5px;  /*    inside text box padding size*/
+    font-size: 15px;   /*    size of word inside box*/
+color:darkorange; /*    orange color text inside box text*/
+background: white url(images/search.png) right center no-repeat;
+    
+/*    inside text of a search box finder image ina boz with white background: color*/
+    
+/*    background: white color place url of image, want pic right and vertically centre, no-repeat for cancel repeataion*/
+border:1px solid green;
+/*    create border with 1px with color green*/
+}
+
+.submit{
+    
+    float: right; /*    sumit button moves to a right*/
+    
+    padding: 5px;    /*    padding between text and border insie submit button*/
+    
+    font-weight: bold;
+    text-decoration-color: white;
+      background: #A751D6;  /*    button background-color: red*/
+    font-size: 15px;
+    
+}
+
+#menu{
+    
+/*    to make height in a menu bar*/
+    height: 70px;
+      background: linear-gradient(#F8F594, #D5D533);
+/*    above for menu bar background color*/
+    padding: 8px 0px;
+    
+/*    top and bottom =8px padding space in menu bar*/
+}
+
+ul{
+    list-style: none;
+/*    need to make stylesheet to remove dot from menu bar*/
+}
+
+#menu ul li{
+    
+    float: left;
+/*    to move all list of home,online tutorial in inline need to use float*/
+    padding: 0px 10px;
+/*    for top and right padding betwen menu for space*/
+        
+}
+#menu ul li:last-child{
+
+/*last item meunu name 'contact us' to remove border line*/
+border-right: none;
+}
+
+#menu ul li a{
+    /*    now acces list item first 'menu'*/
+    
+    text-decoration: none;
+    
+/*    links will be underline get gone*/
+    text-transform: uppercase;
+    
+/*    all menu bar name in upper case*/
+    
+    font-size: 17px;
+    
+/*    size of menu bar name*/
+    
+    padding: 0 30px;
+    
+/*   top and bottom=0px,left and right padding 30px*/
+    
+    border-right: 1px solid;
+    
+/*    creates vertical line between all menu*/
+    
+    transition: font-size 0.3s ease;
+    
+/*    to move atransition in a menu baf like a waves*/
+    
+}
+
+#menu ul li a:hover,  #menu ul li a.active {
+    
+/*    here active is a class name of a 1st menu* or acive link for menu/
+/*    to change menu size and color when click on menu list use hover*/
+ font-size: 20px;
+/*    it will elongated upto 20px;*/
+    font-weight: bold;
+    
+    color: #C34FDB;
+    
+/*    hover also changed color when we click on menu ber*/
+}
+#introdunction{
+/*    to make all background chages*/
+    background : linear-gradient(#EAF289,#B7E953);
+    padding: 20px;
+    
+/*    all text padding paragraph,introdunction,top and bottom*/
+    margin: 15px 0px;
+        
+/*        top bottom,left and right*/
+}
+
+#introdunction h3{
+    
+/*    chanhe header <h3> box size*/
+    font-size: 45px;
+    color: #316901;
+/*    heading <h3>color. and font size*/
+    font-weight: normal;
+}
+
+#introdunction p{
+    font-size: 25px;
+/*    pargraph size increses*/
+    text-align: justify;
+}
+
+.sidebar ul{
+    
+    padding-top: 8px;
+    
+/*    both bar are in same level*/
+}
+.sidebar{
+/*#
+need to define class for both sidebar*/
+height:500px;
+width:400px;
+    
+border:1px solid #BAF46F;
+/*    all sidebar has border 1px solid with border color*/
+    
+/*    to make a curve in border corner use border radius*/
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+/*    top and bottom=10px and left right=20px*/
+
+}
+
+#leftsidebar ul li{
+    
+    padding-bottom: 5px;
+/*    gives 5px bottom space at each list of items in leftsidebar*/
+    list-style-image: url(images/arrow.png);
+        padding-left: 5px;
+}
+
+#rightsidebar ul li{
+    padding-top: 3px;
+    padding-bottom: 2px;
+    list-style-image: url(images/tick.png);
+/*    padding: 17px 0px 17px 17px;*/
+    
+/*    top right bottom left*/
+}
+.sidebar ul li a{
+    
+    text-decoration: none;
+    
+/*    remove all underline/href in lins of all list of  */
+    
+    font-size: 25px;
+    
+    color: #5d12e7;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+
+    text-decoration: none;
+    color: #B314DB;/*    color will change by hover*/
+    font-size: 28px; /*    font-size also changed*/
+    font-weight: bold;
+    transition: font-size 0.3s ease;  /*    transiiton timming function*/
+}
+
+.sidebar h3{
+/*    #side bar heading*/
+    color: red;
+    font-size: 25px;
+    
+}
+#leftsidebar{
+    
+    float: left;
+    
+/*    left side bar float to left*/
+}
+
+#rightsidebar{
+    
+    float: right;
+}
+
+.footer{
+/*     styling footer with different parameters*/
+    height: 70px;
+    background: linear-gradient(#EAF289,#B7E953);
+    padding: 10px 30px;
+    
+/*    \top,bottom 10px &left right 30px*/
+    margin-top: 15px;
+}
